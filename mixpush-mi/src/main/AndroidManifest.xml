@@ -14,12 +14,12 @@
     <uses-permission android:name="${applicationId}.permission.MIPUSH_RECEIVE" />
 
     <application>
-        <meta-data
-            android:name="MIPUSH_SDK_VERSION_CODE"
-            android:value="50010" />
-        <meta-data
-            android:name="MIPUSH_SDK_VERSION_NAME"
-            android:value="5_1_0-C" />
+<!--        <meta-data-->
+<!--            android:name="MIPUSH_SDK_VERSION_CODE"-->
+<!--            android:value="50010" />-->
+<!--        <meta-data-->
+<!--            android:name="MIPUSH_SDK_VERSION_NAME"-->
+<!--            android:value="5_1_0-C" />-->
 
         <service
             android:name="com.xiaomi.push.service.XMPushService"
