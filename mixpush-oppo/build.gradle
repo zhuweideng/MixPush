@@ -31,5 +31,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
     implementation project(path: ':mixpush-core')
     implementation 'commons-codec:commons-codec:1.6'
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
 apply from: '../maven_public.gradle'
