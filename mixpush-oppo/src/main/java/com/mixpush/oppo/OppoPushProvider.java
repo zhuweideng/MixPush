@@ -68,15 +68,16 @@ class MyCallBackResultService implements ICallBackResultService {
         this.context = context;
     }
 
+
     @Override
-    public void onRegister(int responseCode, String registerID) {
-        handler.getLogger().log(OppoPushProvider.TAG, "onRegister responseCode = " + responseCode + ", registerID = " + registerID);
+    public void onRegister(int responseCode, String registerID, String packageName, String miniPackageName) {
+        handler.getLogger().log(OppoPushProvider.TAG, "onRegister responseCode = " + responseCode + ", registerID = " + responseCode);
         MixPushPlatform mixPushPlatform = new MixPushPlatform(OppoPushProvider.OPPO, registerID);
         handler.getPushReceiver().onRegisterSucceed(context, mixPushPlatform);
     }
 
     @Override
-    public void onUnRegister(int responseCode) {
+    public void onUnRegister(int responseCode, String packageName, String miniProgramPkg) {
 
     }
 
@@ -96,7 +97,7 @@ class MyCallBackResultService implements ICallBackResultService {
     }
 
     @Override
-    public void onError(int i, String s) {
+    public void onError(int errorCode, String message, String packageName, String miniProgramPkg) {
 
     }
 }
