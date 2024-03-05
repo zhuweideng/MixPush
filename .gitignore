@@ -12,3 +12,4 @@ build
 
 .externalNativeBuild
 upload_jcenter.sh
+*.asc
