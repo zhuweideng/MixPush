@@ -376,3 +376,6 @@ mi代表使用小米推送，huawei代表是使用华为推送。ok代表通过�
 
 ### git
 git tag -a 2.4.1 -m "v2.4.1"
+
+### jitpack
+https://jitpack.io/#zhuweideng/mixpush/2.4.4
