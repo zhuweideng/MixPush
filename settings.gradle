@@ -10,7 +10,7 @@ include ':mixpush-core'
 //include ':mixpush-fcm'
 
 
-include ':mixpush-sender'
+//include ':mixpush-sender'
 
 //include ':huaweipush-server-sdk'
 

@@ -22,28 +22,28 @@ if (isAndroid) {
         from android.sourceSets.main.java.source
     }
 } else {
-    task javadocJar(type: Jar) {
-        classifier = 'javadoc'
-        from javadoc
-    }
-    task sourcesJar(type: Jar) {
-        classifier = 'sources'
-        from sourceSets.main.allSource
-    }
-    artifacts {
-        archives javadocJar, sourcesJar
-    }
+    // task javadocJar(type: Jar) {
+    //     classifier = 'javadoc'
+    //     from javadoc
+    // }
+    // task sourcesJar(type: Jar) {
+    //     classifier = 'sources'
+    //     from sourceSets.main.allSource
+    // }
+    // artifacts {
+    //     archives javadocJar, sourcesJar
+    // }
 }
 uploadArchives {
     repositories {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-            repository(url: "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/") {
-                authentication(userName: OSSRH_USERNAME, password: OSSRH_PASSWORD)
-            }
-            snapshotRepository(url: "https://s01.oss.sonatype.org/content/repositories/snapshots/") {
-                authentication(userName: OSSRH_USERNAME, password: OSSRH_PASSWORD)
-            }
+            // repository(url: "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/") {
+            //     authentication(userName: OSSRH_USERNAME, password: OSSRH_PASSWORD)
+            // }
+            // snapshotRepository(url: "https://s01.oss.sonatype.org/content/repositories/snapshots/") {
+            //     authentication(userName: OSSRH_USERNAME, password: OSSRH_PASSWORD)
+            // }
             pom.project {
                 name POM_NAME
                 packaging isAndroid ? 'jar' : 'aar'
