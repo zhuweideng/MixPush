@@ -18,7 +18,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+//    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    implementation project(path: ':mixpush-mipush-sdk')
     implementation project(path: ':mixpush-core')
 }
 

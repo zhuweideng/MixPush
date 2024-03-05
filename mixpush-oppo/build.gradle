@@ -8,16 +8,16 @@ android {
 
     }
 
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
+//    repositories {
+//        flatDir {
+//            dirs 'libs'
+//        }
+//    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
     buildTypes {
         release {
             minifyEnabled false
@@ -28,7 +28,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+//    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    implementation project(path: ':mixpush-heytap-sdk')
     implementation project(path: ':mixpush-core')
     implementation 'commons-codec:commons-codec:1.6'
     implementation 'com.google.code.gson:gson:2.10.1'

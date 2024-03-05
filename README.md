@@ -386,13 +386,13 @@ https://docs.gradle.org/current/userguide/signing_plugin.html
 gradle 签名用RSA签名
 （4）RSA（仅用于签名）
 
-brew install gpg
+> brew install gpg
 
 key 列表  
-gpg -K 
+> gpg -K 
 
 导出key
-gpg --keyring secring.gpg --export-secret-keys > ~/.gnupg/secring.gpg
+> gpg --keyring secring.gpg --export-secret-keys > ~/.gnupg/secring.gpg
 
 gpg --gen-key
 gpg --list-keys
