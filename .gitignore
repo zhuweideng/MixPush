@@ -13,3 +13,6 @@ build
 .externalNativeBuild
 upload_jcenter.sh
 *.asc
+debug.keystore
+mixpush-honor1
+mcs-services.json

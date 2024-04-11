@@ -1,17 +1,14 @@
-apply plugin: 'com.android.library'
-//plugins {
-//    id 'com.android.library'
-//}
+plugins {
+    id 'com.android.library'
+    id 'com.hihonor.mcs.asplugin'
+}
 
 android {
-    namespace 'com.mixpush.honor'
-    compileSdkVersion 34
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 24
+        minSdkVersion 17
 
-//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -20,26 +17,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-//    compileOptions {
-//        sourceCompatibility JavaVersion.VERSION_1_8
-//        targetCompatibility JavaVersion.VERSION_1_8
-//    }
-}
 
+}
 allprojects {
     repositories {
-        maven {url 'https://developer.hihonor.com/repo'}
+        maven { url 'https://developer.hihonor.com/repo' }
+
     }
 }
 
 dependencies {
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':mixpush-core')
     implementation 'com.hihonor.mcs:push:7.0.61.303'
-//    implementation 'com.hihonor.mcs:asplugin:2.0.1.300'
-//    implementation 'androidx.appcompat:appcompat:1.6.1'
-//    implementation 'com.google.android.material:material:1.10.0'
-//    testImplementation 'junit:junit:4.13.2'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
 }
+apply from: '../maven_public.gradle'

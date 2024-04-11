@@ -4,7 +4,7 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 19
 
     }
 
@@ -16,9 +16,17 @@ android {
     }
 
 }
-
+allprojects {
+    repositories {
+        maven {
+            allowInsecureProtocol true
+            url 'http://172.16.3.251:8081/repository/maven-public'}
+    }
+}
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation project(path: ':mixpush-vivo-sdk')
+    implementation 'com.github.zhuweideng:vivo_pushSDK_v4.0.0.0_500:2.4.7'
     implementation project(path: ':mixpush-core')
 }
 apply from: '../maven_public.gradle'

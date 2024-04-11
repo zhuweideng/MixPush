@@ -1,16 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mixpush.honor">
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mixpush.honor">
+
+
     <application>
+
+<!--        <meta-data-->
+<!--            android:name="com.hihonor.push.app_id"-->
+<!--            android:value="${HONOR_APP_ID}" />-->
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="900763967" />
+
         <service
-            android:name="com.mixpush.honor.UnifiedHonorMsgService"
+            android:name=".EuHonorMsgService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.hihonor.push.action.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <meta-data
-            android:name="com.hihonor.push.app_id"
-            android:value="UNIFIEDPUSH-${HIHONOR_APP_ID}" />
     </application>
 
     <queries>

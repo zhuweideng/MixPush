@@ -1,9 +1,9 @@
 # MixPush
--keep class com.mixpush.mi.MiPushProvider {*;}
--keep class com.mixpush.meizu.MeizuPushProvider {*;}
--keep class com.mixpush.huawei.HuaweiPushProvider {*;}
--keep class com.mixpush.oppo.OppoPushProvider {*;}
--keep class com.mixpush.vivo.VivoPushProvider {*;}
+#-keep class com.mixpush.mi.MiPushProvider {*;}
+#-keep class com.mixpush.meizu.MeizuPushProvider {*;}
+#-keep class com.mixpush.huawei.HuaweiPushProvider {*;}
+#-keep class com.mixpush.oppo.OppoPushProvider {*;}
+#-keep class com.mixpush.vivo.VivoPushProvider {*;}
  
 # 华为推送
 -ignorewarnings

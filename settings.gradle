@@ -8,6 +8,7 @@ include ':mixpush-huawei'
 include ':mixpush-core'
 include ':mixpush-heytap-sdk'
 include ':mixpush-mipush-sdk'
+include ':mixpush-vivo-sdk'
 //include ':mixpush-server'
 //include ':mixpush-fcm'
 

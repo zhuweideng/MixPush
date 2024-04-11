@@ -20,7 +20,7 @@
         <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
         <meta-data
             android:name="sdk_version_vivo"
-            android:value="484" />
+            android:value="500" />
 
         <service
             android:name="com.vivo.push.sdk.service.CommandClientService"
