@@ -26,7 +26,7 @@ allprojects {
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
 //    implementation project(path: ':mixpush-mipush-sdk')
-    implementation 'com.github.mixpush:MiPush_SDK_Client_6_0_1-C_3rd:2.5.0'
+    implementation 'com.github.mixpush:MiPush_SDK_Client_6_0_1-C_3rd:2.5.1'
     implementation project(path: ':mixpush-core')
 }
 

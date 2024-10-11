@@ -30,7 +30,7 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':mixpush-core')
-    implementation 'com.hihonor.mcs:push:7.0.61.303'
+    implementation 'com.hihonor.mcs:push:8.0.12.307'
 
 }
 apply from: '../maven_public.gradle'

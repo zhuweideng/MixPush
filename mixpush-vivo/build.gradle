@@ -26,7 +26,7 @@ allprojects {
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.jar'])
 //    implementation project(path: ':mixpush-vivo-sdk')
-    implementation 'com.github.mixpush:vivo_pushSDK_v4.0.0.0_500:2.5.0'
+    implementation 'com.github.mixpush:vpush_clientSDK_v4.0.6.0_506:2.5.1'
     implementation project(path: ':mixpush-core')
 }
 apply from: '../maven_public.gradle'
