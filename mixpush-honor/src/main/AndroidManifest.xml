@@ -6,12 +6,12 @@
 
     <application>
 
-<!--        <meta-data-->
-<!--            android:name="com.hihonor.push.app_id"-->
-<!--            android:value="${HONOR_APP_ID}" />-->
         <meta-data
             android:name="com.hihonor.push.app_id"
-            android:value="900763967" />
+            android:value="${HONOR_APP_ID}" />
+<!--        <meta-data-->
+<!--            android:name="com.hihonor.push.app_id"-->
+<!--            android:value="900763967" />-->
 
         <service
             android:name=".EuHonorMsgService"

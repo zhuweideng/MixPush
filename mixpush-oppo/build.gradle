@@ -36,7 +36,7 @@ allprojects {
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
 //    implementation project(path: ':mixpush-heytap-sdk')
-    implementation 'com.github.zhuweideng:com.heytap.msp_3.4.0:2.4.7'
+    implementation 'com.github.mixpush:com.heytap.msp_3.5.1:2.5.0'
     implementation project(path: ':mixpush-core')
     implementation 'commons-codec:commons-codec:1.6'
     implementation 'com.google.code.gson:gson:2.10.1'

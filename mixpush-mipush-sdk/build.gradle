@@ -2,4 +2,4 @@
 configurations.maybeCreate("default")
 artifacts.add("default", file('MiPush_SDK_Client_6_0_1-C_3rd.aar'))
 
-apply from: '../maven_public.gradle'
+//apply from: '../maven_public.gradle'

@@ -20,6 +20,7 @@ android {
         manifestPlaceholders["OPPO_APP_SECRET"] = EXAMPLE_OPPO_APP_SECRET
         manifestPlaceholders["MEIZU_APP_ID"] = EXAMPLE_MEIZU_APP_ID
         manifestPlaceholders["MEIZU_APP_KEY"] = EXAMPLE_MEIZU_APP_KEY
+        manifestPlaceholders["HONOR_APP_ID"] = "900763967"
     }
     signingConfigs {
         release {

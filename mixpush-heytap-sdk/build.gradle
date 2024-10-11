@@ -1,5 +1,5 @@
 
 configurations.maybeCreate("default")
-artifacts.add("default", file('com.heytap.msp_3.4.0.aar'))
+artifacts.add("default", file('com.heytap.msp_3.5.1.aar'))
 
-apply from: '../maven_public.gradle'
+//apply from: '../maven_public.gradle'
