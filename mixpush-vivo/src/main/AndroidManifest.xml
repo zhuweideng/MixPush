@@ -4,10 +4,10 @@
     <application>
         <!--Vivo Push开放平台中应用的appid 和api key-->
         <meta-data
-                android:name="com.vivo.push.api_key"
+                android:name="api_key"
                 android:value="${VIVO_APP_KEY}" />
         <meta-data
-                android:name="com.vivo.push.app_id"
+                android:name="app_id"
                 android:value="${VIVO_APP_ID}" />
 
         <receiver android:name="com.mixpush.vivo.PushMessageReceiverImpl"
@@ -20,7 +20,7 @@
         <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
         <meta-data
             android:name="sdk_version_vivo"
-            android:value="500" />
+            android:value="506" />
 
         <service
             android:name="com.vivo.push.sdk.service.CommandClientService"
